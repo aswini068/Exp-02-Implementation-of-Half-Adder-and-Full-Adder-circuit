@@ -41,6 +41,7 @@ Developed by: m.aswini
 RegisterNumber:212223220010
 
 HALF ADDER:
+
 module halfadd(a,b,sum,carry);
 
 input a,b;
@@ -53,7 +54,9 @@ and(carry,a,b);
 
 endmodule
 
+
 FULL ADDER:
+
 module fulladder(a,b,c,sum,carry);
 
 input a,b,c;
