@@ -42,23 +42,38 @@ RegisterNumber:212223220010
 
 HALF ADDER:
 module halfadd(a,b,sum,carry);
+
 input a,b;
+
 output sum,carry;
+
 xor(sum,a,b);
+
 and(carry,a,b);
+
 endmodule
 
 FULL ADDER:
 module fulladder(a,b,c,sum,carry);
+
 input a,b,c;
+
 output sum,carry;
+
 wire x,p,q,r;
+
 xor(x,b,c);
+
 xor(sum,x,a);
+
 and(p,a,b);
+
 and(q,b,c);
+
 and(r,a,c);
+
 or(carry,p,q,r);
+
 endmodule  
 
 ## Truthtable:
